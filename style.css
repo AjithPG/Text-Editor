@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f2b24;
+  font-family: 'Inter',sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 90vmin;
+  padding: 20px 30px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+.app-name{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+button {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: #020929;
+}
+
+select {
+  padding: 7px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.options select,
+.options label {
+  font-family: "Inter", sans-serif;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 28px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+#textInput{
+    margin-top: 20px;
+    border:1px solid #ddd;
+    padding: 20px;
+    height: 50vh;
+}
+
+.active{
+    background-color: #e0e9ff;
+}
